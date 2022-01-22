@@ -1,0 +1,106 @@
+{
+  "iconData": [
+    {
+      "title": "HMTL5",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+      "icon": "FaHtml5",
+      "classSelector": ""
+    },
+    {
+      "title": "CSS3",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "icon": "FaCss3Alt",
+      "classSelector": ""
+    },
+    {
+      "title": "Javascript",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "icon": "SiJavascript",
+      "classSelector": ""
+    },
+    {
+      "title": "LESS",
+      "link": "http://lesscss.org/",
+      "icon": "FaLess",
+      "classSelector": ""
+    },
+    {
+      "title": "Yarn",
+      "link": "https://classic.yarnpkg.com/en/",
+      "icon": "FaYarn",
+      "classSelector": ""
+    },
+    {
+      "title": "React",
+      "link": "https://reactjs.org/",
+      "icon": "FaReact",
+      "classSelector": ""
+    },
+    {
+      "title": "Redux",
+      "link": "https://redux.js.org/",
+      "icon": "SiRedux",
+      "classSelector": ""
+    },
+    {
+      "title": "Github",
+      "link": "https://github.com/",
+      "icon": "FaGithub",
+      "classSelector": ""
+    },
+    {
+      "title": "Git",
+      "link": "https://git-scm.com/",
+      "icon": "FaGitAlt",
+      "classSelector": ""
+    },
+    {
+      "title": "Node.js",
+      "link": "https://nodejs.org/en/",
+      "icon": "FaNodeJs",
+      "classSelector": ""
+    },
+    {
+      "title": "npm",
+      "link": "https://www.npmjs.com/",
+      "icon": "FaNpm",
+      "classSelector": ""
+    },
+    {
+      "title": "Jest",
+      "link": "https://jestjs.io/",
+      "icon": "SiJest",
+      "classSelector": ""
+    },
+    {
+      "title": "Axios",
+      "link": "https://github.com/axios/axios",
+      "icon": "./images/axios.svg",
+      "classSelector": ""
+    },
+    {
+      "title": "SQlite",
+      "link": "https://www.sqlite.org/index.html",
+      "icon": "./images/SQLite-logo.png",
+      "classSelector": ""
+    },
+    {
+      "title": "Express.js",
+      "link": "https://expressjs.com/",
+      "icon": "./images/express.jpg",
+      "classSelector": ""
+    },
+    {
+      "title": "Postman",
+      "link": "https://www.postman.com/",
+      "icon": "SiPostman",
+      "classSelector": ""
+    },
+    {
+      "title": "Python3",
+      "link": "https://www.python.org/",
+      "icon": "./images/python.png",
+      "classSelector": ""
+    }
+  ]
+}

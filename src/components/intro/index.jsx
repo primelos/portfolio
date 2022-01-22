@@ -26,7 +26,7 @@ const Intro = () => {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-linkedin"
+                className="bi bi-linkedin"
                 viewBox="0 0 16 16"
                 style={{ color: "#1ca1f2" }}
               >
@@ -43,7 +43,7 @@ const Intro = () => {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-github"
+                className="bi bi-github"
                 viewBox="0 0 16 16"
                 style={{ color: "#0077b5" }}
               >
@@ -60,7 +60,7 @@ const Intro = () => {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-twitter"
+                className="bi bi-twitter"
                 viewBox="0 0 16 16"
                 style={{ color: "#0077b5" }}
               >
@@ -77,7 +77,7 @@ const Intro = () => {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-facebook"
+                className="bi bi-facebook"
                 viewBox="0 0 16 16"
                 style={{ color: "#3578e5" }}
               >
@@ -163,7 +163,7 @@ const MediaIcons = styled.div`
     width: 30px;
     transition: 1s !important;
     &:hover {
-      transform: scale(1.2);
+      opacity: 0.5;
     }
   }
 `;
