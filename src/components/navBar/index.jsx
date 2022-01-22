@@ -1,5 +1,5 @@
 import Navbar from "react-bootstrap/Navbar";
-import { Container, Nav, Toggle } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 import styled from "styled-components";
 
 const NavBar = () => {
