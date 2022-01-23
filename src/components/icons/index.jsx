@@ -12,11 +12,15 @@ import {
 } from "react-icons/fa";
 import data from "../../data.json";
 import {
-  SiCss3,
   SiPostman,
   SiJest,
   SiRedux,
   SiJavascript,
+  SiExpress,
+  SiMysql,
+  SiSqlite,
+  SiPython,
+  SiFirebase,
 } from "react-icons/si";
 
 const IconsList = () => {
@@ -31,7 +35,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#dd4b25" }}>
             <FaHtml5 />
           </IconBox>
-          <Text>HTML5</Text>
         </IconLink>
       </IconContainer>
 
@@ -44,7 +47,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#384bdd" }}>
             <FaCss3Alt />
           </IconBox>
-          <Text>CSS3</Text>
         </IconLink>
       </IconContainer>
 
@@ -57,7 +59,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#efd81e" }}>
             <SiJavascript />
           </IconBox>
-          <Text>Javascript</Text>
         </IconLink>
       </IconContainer>
 
@@ -70,7 +71,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#2a4c80" }}>
             <FaLess />
           </IconBox>
-          <Text>LESS</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -82,7 +82,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#3e8ab5" }}>
             <FaYarn />
           </IconBox>
-          <Text>Yarn</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -94,7 +93,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#5ed3f3" }}>
             <FaReact />
           </IconBox>
-          <Text>React</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -106,7 +104,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#7248b6" }}>
             <SiRedux />
           </IconBox>
-          <Text>Redux</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -118,7 +115,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#111214" }}>
             <FaGithub />
           </IconBox>
-          <Text>Github</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -130,7 +126,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#e84d30" }}>
             <FaGitAlt />
           </IconBox>
-          <Text>Git</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -142,7 +137,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#87bf01" }}>
             <FaNodeJs />
           </IconBox>
-          <Text>Node.js</Text>
         </IconLink>
       </IconContainer>
 
@@ -155,7 +149,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#c53634" }}>
             <FaNpm />
           </IconBox>
-          <Text>npm</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -167,7 +160,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#8c273a" }}>
             <SiJest />
           </IconBox>
-          <Text>Jest</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -177,7 +169,6 @@ const IconsList = () => {
           rel="noopener noreferrer"
         >
           <img src="./images/axios.svg" alt="axios" />
-          <Text>Axios</Text>
         </IconLinkImg>
       </IconContainer>
       <IconContainer>
@@ -186,8 +177,16 @@ const IconsList = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="./images/SQLite-logo.png" alt="sqlite" />
-          <Text>SQLite</Text>
+          <SiMysql />
+        </IconLinkImg>
+      </IconContainer>
+      <IconContainer>
+        <IconLinkImg
+          href="https://www.sqlite.org/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiSqlite />
         </IconLinkImg>
       </IconContainer>
       <IconContainer>
@@ -196,8 +195,16 @@ const IconsList = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="./images/express.jpg" alt="express.js" />
-          <Text>Express.js</Text>
+          <SiExpress />
+        </IconLinkImg>
+      </IconContainer>
+      <IconContainer>
+        <IconLinkImg
+          href="https://expressjs.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiFirebase />
         </IconLinkImg>
       </IconContainer>
       <IconContainer>
@@ -209,7 +216,6 @@ const IconsList = () => {
           <IconBox style={{ color: "#ef6935" }}>
             <SiPostman />
           </IconBox>
-          <Text>Postman</Text>
         </IconLink>
       </IconContainer>
       <IconContainer>
@@ -218,8 +224,7 @@ const IconsList = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="./images/python.png" alt="python" />
-          <Text>Python</Text>
+          <SiPython />
         </IconLinkImg>
       </IconContainer>
     </Wrapper>
