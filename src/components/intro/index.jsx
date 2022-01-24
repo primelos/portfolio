@@ -98,7 +98,7 @@ export default Intro;
 
 const Wrapper = styled.div`
   height: 84vh;
-  background-color: #40403b;
+  /* background-color: rgb(64, 64, 59); */
   display: flex;
   justify-content: space-around;
   align-items: center;
