@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CarouselProjects from "../components/carousel";
+import Footer from "../components/footer";
 import IconsList from "../components/icons";
 import Intro from "../components/intro";
 import NavBar from "../components/navBar";
@@ -12,6 +13,7 @@ const Home = () => {
       <Intro />
       <CarouselProjects />
       <IconsList />
+      <Footer />
     </Wrapper>
   );
 };

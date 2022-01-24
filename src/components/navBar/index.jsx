@@ -28,7 +28,7 @@ const NavBar = () => {
 export default NavBar;
 
 const Wrapper = styled(Navbar)`
-  background-color: #40403b !important;
+  /* background-color: #40403b !important; */
   padding-top: 60px;
 `;
 
