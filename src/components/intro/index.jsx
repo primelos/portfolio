@@ -108,7 +108,6 @@ export default Intro;
 
 const Wrapper = styled.div`
   height: 84vh;
-  /* background-color: rgb(64, 64, 59); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -167,7 +166,6 @@ const MediaIcons = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  /* font-size: 20px; */
   div {
     padding: 8px;
     background: #faebd73b;

@@ -10,7 +10,6 @@ const Home = () => {
   const executeScroll = () => myRef.current.scrollIntoView(); // run this function from an event handler or pass it to useEffect to execute scroll
 
   const myRef = useRef(null);
-  console.log(myRef);
 
   return (
     <Wrapper>
