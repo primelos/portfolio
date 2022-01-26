@@ -1,10 +1,20 @@
 import Home from "./pages/home";
+import { Routes, Route } from "react-router-dom";
+import AllProjects from "./components/allProjects";
+import Contact from "./components/contact";
+import { FormspreeProvider } from "@formspree/react";
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <FormspreeProvider project="1771700540435069968">
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<AllProjects />} />
+          <Route path="/contact/*" element={<Contact />} />
+        </Routes>
+      </div>
+    </FormspreeProvider>
   );
 }
 
