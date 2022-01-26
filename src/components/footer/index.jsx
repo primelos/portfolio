@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Footer = () => {
-  console.log("hi");
   document.onreadystatechange = () => {
     if (document.readyState === "complete") {
       let dates = document.getElementById("date");

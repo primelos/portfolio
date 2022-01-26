@@ -9,8 +9,6 @@ const Contact = (props) => {
   const [state, handleSubmit] = useForm("contactMe");
   const { errors, submitting, succeeded } = state;
 
-  console.log("props", props.history);
-
   const navigate = useNavigate();
 
   if (succeeded) {

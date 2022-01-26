@@ -10,7 +10,6 @@ import {
   FaLess,
   FaNode,
 } from "react-icons/fa";
-import data from "../../data.json";
 import {
   SiPostman,
   SiJest,
@@ -266,11 +265,8 @@ const Wrapper = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   margin: auto;
   flex-direction: column;
-
-  /* background-color: #40403b !important; */
 `;
 
 const TitleContainer = styled.div`
@@ -287,7 +283,6 @@ const IconWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin: auto; */
   flex-wrap: wrap;
 `;
 

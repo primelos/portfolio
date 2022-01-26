@@ -7,22 +7,22 @@ const NavBar = () => {
   return (
     <Wrapper bg="light" variant="light">
       <WrapperContainer className=" d-flex justify-content-between mw-90">
-        <LinkWrapper to="/">
+        <LinkWrapper>
           <InitialContainer>
-            <Initial className="text-light" href="#home">
+            <Initial as={Link} className="text-light" to="/">
               CV
             </Initial>
           </InitialContainer>
         </LinkWrapper>
 
         <Nav>
-          <LinkWrapper to="/projects">
-            <Nav.Link className="text-light fs-4" href="#projects">
+          <LinkWrapper>
+            <Nav.Link as={Link} className="text-light fs-4" to="/projects">
               Projects
             </Nav.Link>
           </LinkWrapper>
-          <LinkWrapper to="/contact">
-            <Nav.Link className="text-light fs-4" href="#contact">
+          <LinkWrapper>
+            <Nav.Link as={Link} className="text-light fs-4" to="/contact">
               Contact
             </Nav.Link>
           </LinkWrapper>
@@ -35,7 +35,6 @@ const NavBar = () => {
 export default NavBar;
 
 const Wrapper = styled(Navbar)`
-  /* background-color: #40403b !important; */
   padding-top: 60px;
   --bs-bg-opacity: 0 !important;
 `;
@@ -48,7 +47,6 @@ const InitialContainer = styled.div`
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  /* border: 3px solid black; */
   border-radius: 50%;
   width: 120px;
   max-width: 120px;
@@ -61,13 +59,13 @@ const Initial = styled(Navbar.Brand)`
   font-size: 70px;
   margin-right: 0;
   width: 110px;
-  /* margin-top: 0; */
   height: 110px;
   background-color: #4c4b2d;
   border-radius: 50%;
+  text-decoration: none;
 `;
 
-const LinkWrapper = styled(Link)`
+const LinkWrapper = styled.div`
   text-decoration: none;
   transition: 1s !important;
   &:hover {

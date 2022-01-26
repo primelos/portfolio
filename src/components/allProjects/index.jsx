@@ -187,7 +187,7 @@ const AllProjects = () => {
       <NavBar />
       <Header>Projects Examples</Header>
       <CardContainer>
-        {testArr.map((test) => {
+        {testArr.map((test, i) => {
           const cld = new Cloudinary({
             cloud: {
               cloudName: "primelos",
@@ -196,16 +196,17 @@ const AllProjects = () => {
           const myImage = cld.image(test.name);
           myImage.resize(fill().width(250).height(250));
           return (
-            <Card style={{ width: "20rem", margin: "20px" }}>
+            <Card key={i} style={{ width: "20rem", margin: "20px" }}>
               <AdvancedImage cldImg={myImage} />
               <Card.Body>
                 <Card.Title style={{ fontSize: "1.7rem" }}>
                   {test.title}
                 </Card.Title>
                 {/* <Card.Text>Built with React</Card.Text> */}
+
                 <a
                   className="btn btn-primary "
-                  href={test.webUrl}
+                  href={test.webUrl ? test.webUrl : null}
                   target="_blank"
                   rel="noopener noreferrer"
                   role="button"
