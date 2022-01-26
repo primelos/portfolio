@@ -3,12 +3,12 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaNpm,
-  FaNodeJs,
   FaGitAlt,
   FaGithub,
   FaReact,
   FaYarn,
   FaLess,
+  FaNode,
 } from "react-icons/fa";
 import data from "../../data.json";
 import {
@@ -28,7 +28,7 @@ const IconsList = () => {
   return (
     <Wrapper>
       <TitleContainer>
-        <Title> Frameworks and Tools used</Title>
+        <Title>Technologies and Tools used</Title>
       </TitleContainer>
       <IconWrapper>
         <IconContainer>
@@ -151,7 +151,7 @@ const IconsList = () => {
             rel="noopener noreferrer"
           >
             <IconBox style={{ color: "#87bf01" }}>
-              <FaNodeJs />
+              <FaNode />
             </IconBox>
           </IconLink>
         </IconContainer>
@@ -262,17 +262,20 @@ export default IconsList;
 
 const Wrapper = styled.div`
   padding-top: 80px;
-  height: 100%;
+  height: 90vh;
   width: 50%;
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   margin: auto;
   flex-direction: column;
 
   /* background-color: #40403b !important; */
 `;
 
-const TitleContainer = styled.div``;
+const TitleContainer = styled.div`
+  margin-bottom: 30px;
+`;
 
 const Title = styled.div`
   font-size: 25px;
@@ -284,12 +287,13 @@ const IconWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: auto;
+  /* margin: auto; */
   flex-wrap: wrap;
 `;
 
 const IconContainer = styled.div`
   margin: 0 30px;
+  padding: 30px 0;
 `;
 
 const Text = styled.div`

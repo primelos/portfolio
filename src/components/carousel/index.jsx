@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 
-const CarouselProjects = () => {
+const CarouselProjects = ({ myRef }) => {
   return (
-    <Wrapper>
+    <Wrapper ref={myRef}>
       <Carousel fade>
         <Carousel.Item>
           <img
@@ -64,10 +64,8 @@ const CarouselProjects = () => {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+            <h3>Spacetagram</h3>
+            <p>View images and videos from nasa.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>

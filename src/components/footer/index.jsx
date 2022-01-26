@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Footer = () => {
+  console.log("hi");
   document.onreadystatechange = () => {
     if (document.readyState === "complete") {
       let dates = document.getElementById("date");
@@ -26,4 +27,5 @@ const Wrapper = styled.div`
 
 const Text = styled.div`
   letter-spacing: 1px;
+  color: whitesmoke;
 `;
