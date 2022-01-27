@@ -69,6 +69,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 450px) {
+    width: 90%;
+  }
 `;
 
 const Header = styled.h2`
@@ -76,6 +79,10 @@ const Header = styled.h2`
   text-align: center;
   margin-bottom: 35px;
   font-size: 3rem;
+  color: whitesmoke;
+  @media screen and (max-width: 450px) {
+  }
+  font-size: 2.4rem;
 `;
 
 const FormInput = styled.form`
@@ -87,6 +94,7 @@ const FormInput = styled.form`
     font-weight: 200;
     letter-spacing: 4px;
     text-transform: uppercase;
+    color: whitesmoke;
   }
   input {
     margin-bottom: 30px;

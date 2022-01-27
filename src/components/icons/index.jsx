@@ -68,28 +68,6 @@ const IconsList = () => {
 
         <IconContainer>
           <IconLink
-            href="http://lesscss.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconBox style={{ color: "#2a4c80" }}>
-              <FaLess />
-            </IconBox>
-          </IconLink>
-        </IconContainer>
-        <IconContainer>
-          <IconLink
-            href="https://classic.yarnpkg.com/en/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconBox style={{ color: "#3e8ab5" }}>
-              <FaYarn />
-            </IconBox>
-          </IconLink>
-        </IconContainer>
-        <IconContainer>
-          <IconLink
             href="https://reactjs.org/"
             target="_blank"
             rel="noopener noreferrer"
@@ -99,9 +77,10 @@ const IconsList = () => {
             </IconBox>
           </IconLink>
         </IconContainer>
+
         <IconContainer>
           <IconLink
-            href="https://reactjs.org/"
+            href="https://nextjs.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -110,17 +89,43 @@ const IconsList = () => {
             </IconBox>
           </IconLink>
         </IconContainer>
+
         <IconContainer>
-          <IconLink
-            href="https://redux.js.org/"
+          <IconLinkImg
+            href="https://www.python.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconBox style={{ color: "#7248b6" }}>
-              <SiRedux />
+            <IconBox style={{ color: "#3470a0" }}>
+              <SiPython />
+            </IconBox>
+          </IconLinkImg>
+        </IconContainer>
+
+        <IconContainer>
+          <IconLink
+            href="https://nodejs.org/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBox style={{ color: "#87bf01" }}>
+              <FaNode />
             </IconBox>
           </IconLink>
         </IconContainer>
+
+        <IconContainer>
+          <IconLinkImg
+            href="https://expressjs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBox style={{ color: "#323232" }}>
+              <SiExpress />
+            </IconBox>
+          </IconLinkImg>
+        </IconContainer>
+
         <IconContainer>
           <IconLink
             href="https://github.com/"
@@ -132,6 +137,7 @@ const IconsList = () => {
             </IconBox>
           </IconLink>
         </IconContainer>
+
         <IconContainer>
           <IconLink
             href="https://git-scm.com/"
@@ -140,17 +146,6 @@ const IconsList = () => {
           >
             <IconBox style={{ color: "#e84d30" }}>
               <FaGitAlt />
-            </IconBox>
-          </IconLink>
-        </IconContainer>
-        <IconContainer>
-          <IconLink
-            href="https://nodejs.org/en/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconBox style={{ color: "#87bf01" }}>
-              <FaNode />
             </IconBox>
           </IconLink>
         </IconContainer>
@@ -166,6 +161,43 @@ const IconsList = () => {
             </IconBox>
           </IconLink>
         </IconContainer>
+
+        <IconContainer>
+          <IconLink
+            href="https://classic.yarnpkg.com/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBox style={{ color: "#3e8ab5" }}>
+              <FaYarn />
+            </IconBox>
+          </IconLink>
+        </IconContainer>
+
+        <IconContainer>
+          <IconLink
+            href="http://lesscss.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBox style={{ color: "#2a4c80" }}>
+              <FaLess />
+            </IconBox>
+          </IconLink>
+        </IconContainer>
+
+        <IconContainer>
+          <IconLink
+            href="https://redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBox style={{ color: "#7248b6" }}>
+              <SiRedux />
+            </IconBox>
+          </IconLink>
+        </IconContainer>
+
         <IconContainer>
           <IconLink
             href="https://jestjs.io/"
@@ -177,6 +209,7 @@ const IconsList = () => {
             </IconBox>
           </IconLink>
         </IconContainer>
+
         <IconContainer>
           <IconLinkImg
             href="https://github.com/axios/axios"
@@ -186,6 +219,7 @@ const IconsList = () => {
             <img src="./images/axios.svg" alt="axios" />
           </IconLinkImg>
         </IconContainer>
+
         <IconContainer>
           <IconLinkImg
             href="https://www.mysql.com/"
@@ -208,17 +242,7 @@ const IconsList = () => {
             </IconBox>
           </IconLinkImg>
         </IconContainer>
-        <IconContainer>
-          <IconLinkImg
-            href="https://expressjs.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconBox style={{ color: "#323232" }}>
-              <SiExpress />
-            </IconBox>
-          </IconLinkImg>
-        </IconContainer>
+
         <IconContainer>
           <IconLinkImg
             href="https://firebase.google.com/"
@@ -241,17 +265,6 @@ const IconsList = () => {
             </IconBox>
           </IconLink>
         </IconContainer>
-        <IconContainer>
-          <IconLinkImg
-            href="https://www.python.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <IconBox style={{ color: "#3470a0" }}>
-              <SiPython />
-            </IconBox>
-          </IconLinkImg>
-        </IconContainer>
       </IconWrapper>
     </Wrapper>
   );
@@ -267,6 +280,9 @@ const Wrapper = styled.div`
   align-items: center;
   margin: auto;
   flex-direction: column;
+  @media screen and (max-width: 450px) {
+    width: 80%;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -277,27 +293,38 @@ const Title = styled.div`
   font-size: 25px;
   font-weight: 700;
   color: whitesmoke;
+  text-align: center;
 `;
 
 const IconWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+  }
 `;
 
 const IconContainer = styled.div`
   margin: 0 30px;
   padding: 30px 0;
-`;
-
-const Text = styled.div`
-  text-align: center;
-  color: black;
+  @media screen and (max-width: 450px) {
+    margin: 0 5px;
+    padding: 10px 5px;
+  }
 `;
 
 const IconBox = styled.div`
   font-size: 65px;
+  transition: 1s !important;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 40px;
+  }
 `;
 
 const IconLink = styled.a`
@@ -306,9 +333,13 @@ const IconLink = styled.a`
 
 const IconLinkImg = styled.a`
   text-decoration: none;
+  transition: 1s !important;
   img {
     height: 75px;
     width: 75px;
     object-fit: contain;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 `;
