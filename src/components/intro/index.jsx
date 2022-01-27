@@ -123,6 +123,12 @@ const ContentWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 50%;
+
+  @media screen and (max-width: 450px) {
+    padding-top: 50px;
+    height: 55vh;
+    flex-direction: column;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -145,7 +151,6 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: -900px; */
 
   img {
     width: 250px;

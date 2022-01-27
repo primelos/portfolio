@@ -12,7 +12,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/disney.png"}
             alt="First slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption style={{ bottom: "100px" }}>
             <a
               href="https://disneyplus-cf094.web.app/"
               target="_blank"
@@ -20,7 +20,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -28,7 +28,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/tesla-clone.png"}
             alt="Second slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption style={{ bottom: "100px" }}>
             <a
               href="https://tesla-clone-one.netlify.app/"
               target="_blank"
@@ -36,7 +36,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -44,7 +44,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/uber-clone.png"}
             alt="Third slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption style={{ bottom: "100px" }}>
             <a
               href="https://uber-clone-gold.vercel.app/"
               target="_blank"
@@ -52,7 +52,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -60,7 +60,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/todo-list.png"}
             alt="Third slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption style={{ bottom: "100px" }}>
             <a
               href="https://priceless-lamport-ee903d.netlify.app/"
               target="_blank"
@@ -68,7 +68,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -76,7 +76,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/spacetagram.png"}
             alt="Third slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption style={{ bottom: "100px" }}>
             <a
               href="https://spacestagram21.vercel.app/"
               target="_blank"
@@ -84,7 +84,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -92,7 +92,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/starbucks.png"}
             alt="Third slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption style={{ bottom: "100px" }}>
             <a
               href="https://starbucks-clone-green.vercel.app/"
               target="_blank"
@@ -100,7 +100,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -108,7 +108,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/futbol-league.png"}
             alt="Third slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption style={{ bottom: "100px" }}>
             <a
               href="https://futbol-dun.vercel.app/"
               target="_blank"
@@ -116,7 +116,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -124,7 +124,7 @@ const CarouselProjects = ({ myRef }) => {
             src={"./images/pintrest-clone.png"}
             alt="Third slide"
           />
-          <Carousel.Caption style={{ bottom: "100px" }}>
+          <CaroCaption>
             <a
               href="https://pintrest-clone.vercel.app/"
               target="_blank"
@@ -132,7 +132,7 @@ const CarouselProjects = ({ myRef }) => {
             >
               <OpenBrowser />
             </a>
-          </Carousel.Caption>
+          </CaroCaption>
           {/* <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>
@@ -149,6 +149,9 @@ export default CarouselProjects;
 
 const Wrapper = styled.div`
   height: 100vh;
+  @media screen and (max-width: 450px) {
+    height: 25vh;
+  }
 `;
 
 const OpenBrowser = styled(MdOpenInBrowser)`
@@ -165,5 +168,15 @@ const OpenBrowser = styled(MdOpenInBrowser)`
     100% {
       transform: perspective(400px) rotateY(180deg);
     }
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 40px !important;
+  }
+`;
+
+const CaroCaption = styled(Carousel.Caption)`
+  bottom: 100px;
+  @media screen and (max-width: 450px) {
+    bottom: 10px !important;
   }
 `;
