@@ -7,6 +7,7 @@ import { Card, Button } from "react-bootstrap";
 import NavBar from "../navBar";
 import { FaFileCode } from "react-icons/fa";
 import Footer from "../footer";
+import UpArrow from "../upArrow";
 
 const AllProjects = () => {
   let testArr = [
@@ -229,6 +230,7 @@ const AllProjects = () => {
         })}
       </CardContainer>
       <Footer />
+      <UpArrow />
     </Wrapper>
   );
 };

@@ -55,3 +55,42 @@ code {
     rgb(64, 64, 59) 100%
   );
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+  font-size: 40px;
+  color: rgb(56, 50, 50) !important;
+}
+
+.carousel-control-prev > svg {
+  border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 8px 0px 22px -2px #030012;
+  box-shadow: 8px 0px 22px -2px #030012;
+  padding: 5px;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  text-decoration: none;
+}
+
+.carousel-control-next > svg {
+  border-radius: 50%;
+  -webkit-box-shadow: -8px 0px 22px -2px #030012;
+  box-shadow: -8px 0px 22px -2px #030012;
+  padding: 5px;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
