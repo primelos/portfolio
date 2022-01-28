@@ -163,26 +163,9 @@ const Wrapper = styled.div`
 const OpenBrowser = styled(MdOpenInBrowser)`
   font-size: 700px;
   color: #6ed629;
-  /* transition: transform 1s;
-  -webkit-animation: flip-with-rotate 1.5s infinite;
-  animation: flip-with-rotate 1.5s infinite; */
-
-  /* @keyframes flip-with-rotate {
-    0% {
-      transform: perspective(400px) rotateY(0);
-    }
-
-    100% {
-      transform: perspective(400px) rotateY(180deg);
-    }
-  }
-  @media screen and (max-width: 450px) {
-    font-size: 200px !important;
-  } */
 `;
 
 const CaroCaption = styled(Carousel.Caption)`
-  /* bottom: 10px; */
   opacity: 0;
   @media screen and (max-width: 450px) {
     top: -10px !important;
