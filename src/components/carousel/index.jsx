@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 import { MdOpenInBrowser } from "react-icons/md";
+import { FaHandPointRight, FaHandPointLeft } from "react-icons/fa";
 
 const CarouselProjects = ({ myRef }) => {
   return (
     <Wrapper ref={myRef}>
-      <Carousel fade>
-        <Carousel.Item>
+      <Carousel
+        fade
+        prevIcon={<FaHandPointLeft />}
+        nextIcon={<FaHandPointRight />}
+      >
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/disney.png"}
@@ -22,7 +27,8 @@ const CarouselProjects = ({ myRef }) => {
             </a>
           </CaroCaption>
         </Carousel.Item>
-        <Carousel.Item>
+
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/tesla-clone.png"}
@@ -38,7 +44,7 @@ const CarouselProjects = ({ myRef }) => {
             </a>
           </CaroCaption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/uber-clone.png"}
@@ -54,7 +60,7 @@ const CarouselProjects = ({ myRef }) => {
             </a>
           </CaroCaption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/todo-list.png"}
@@ -70,7 +76,7 @@ const CarouselProjects = ({ myRef }) => {
             </a>
           </CaroCaption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/spacetagram.png"}
@@ -86,7 +92,7 @@ const CarouselProjects = ({ myRef }) => {
             </a>
           </CaroCaption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/starbucks.png"}
@@ -102,7 +108,7 @@ const CarouselProjects = ({ myRef }) => {
             </a>
           </CaroCaption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/futbol-league.png"}
@@ -118,7 +124,7 @@ const CarouselProjects = ({ myRef }) => {
             </a>
           </CaroCaption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval="3000">
           <img
             className="d-block w-100"
             src={"./images/pintrest-clone.png"}
@@ -155,28 +161,13 @@ const Wrapper = styled.div`
 `;
 
 const OpenBrowser = styled(MdOpenInBrowser)`
-  font-size: 70px !important;
+  font-size: 700px;
   color: #6ed629;
-  -webkit-animation: flip-with-rotate 1.5s infinite;
-  animation: flip-with-rotate 1.5s infinite;
-
-  @keyframes flip-with-rotate {
-    0% {
-      transform: perspective(400px) rotateY(0);
-    }
-
-    100% {
-      transform: perspective(400px) rotateY(180deg);
-    }
-  }
-  @media screen and (max-width: 450px) {
-    font-size: 40px !important;
-  }
 `;
 
 const CaroCaption = styled(Carousel.Caption)`
-  bottom: 100px;
+  opacity: 0;
   @media screen and (max-width: 450px) {
-    bottom: 10px !important;
+    top: -10px !important;
   }
 `;

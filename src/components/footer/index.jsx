@@ -1,17 +1,18 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Footer = () => {
-  document.onreadystatechange = () => {
-    if (document.readyState === "complete") {
-      let dates = document.getElementById("date");
-      dates.innerHTML = new Date().getFullYear();
-    }
-  };
+  const [year, setYear] = useState("");
+
+  useEffect(() => {
+    const getYear = new Date().getFullYear();
+    return setYear(getYear);
+  }, []);
 
   return (
     <Wrapper>
       <Text>
-        Copy Right © <span id="date"></span> Carlos Venegas
+        Copy Right © <span id="date">{year}</span> Carlos Venegas
       </Text>
     </Wrapper>
   );
@@ -20,8 +21,15 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.div`
-  padding: 80px 0;
-  text-align: center;
+  margin-top: 100px;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 450px) {
+    height: 20vh;
+    margin-top: 20px;
+  }
 `;
 
 const Text = styled.div`
