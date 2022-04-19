@@ -13,6 +13,12 @@ const CarouselProjects = ({ myRef }) => {
       >
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/disney.png"}
             alt="First slide"
@@ -30,6 +36,12 @@ const CarouselProjects = ({ myRef }) => {
 
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/tesla-clone.png"}
             alt="Second slide"
@@ -46,6 +58,12 @@ const CarouselProjects = ({ myRef }) => {
         </Carousel.Item>
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/uber-clone.png"}
             alt="Third slide"
@@ -62,6 +80,12 @@ const CarouselProjects = ({ myRef }) => {
         </Carousel.Item>
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/todo-list.png"}
             alt="Third slide"
@@ -78,6 +102,12 @@ const CarouselProjects = ({ myRef }) => {
         </Carousel.Item>
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/spacetagram.png"}
             alt="Third slide"
@@ -94,6 +124,12 @@ const CarouselProjects = ({ myRef }) => {
         </Carousel.Item>
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/starbucks.png"}
             alt="Third slide"
@@ -110,6 +146,12 @@ const CarouselProjects = ({ myRef }) => {
         </Carousel.Item>
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/futbol-league.png"}
             alt="Third slide"
@@ -126,6 +168,12 @@ const CarouselProjects = ({ myRef }) => {
         </Carousel.Item>
         <Carousel.Item interval="3000">
           <img
+            ref={(el) => {
+              if (el) {
+                el.style.setProperty("width", "75%", "important");
+                el.style.setProperty("margin", "auto", "important");
+              }
+            }}
             className="d-block w-100"
             src={"./images/pintrest-clone.png"}
             alt="Third slide"
@@ -154,7 +202,10 @@ const CarouselProjects = ({ myRef }) => {
 export default CarouselProjects;
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+
   @media screen and (max-width: 450px) {
     height: 25vh;
   }

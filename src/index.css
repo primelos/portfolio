@@ -82,6 +82,12 @@ code {
   -webkit-animation: bounce 2s infinite;
   text-decoration: none;
 }
+/* 
+.carousel img {
+  width: 75%;
+  
+  margin: auto;
+} */
 
 @keyframes bounce {
   0% {
@@ -92,5 +98,17 @@ code {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+.carousel-control-prev>svg {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel-control-next>svg {
+    font-size: 30px;
   }
 }
