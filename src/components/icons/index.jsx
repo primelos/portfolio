@@ -27,7 +27,7 @@ const IconsList = () => {
   return (
     <Wrapper>
       <TitleContainer>
-        <Title>Technologies and Tools used</Title>
+        <Title>Technologies and tools used</Title>
       </TitleContainer>
       <IconWrapper>
         <IconContainer>
@@ -298,7 +298,7 @@ const Title = styled.div`
 
 const IconWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   @media screen and (max-width: 450px) {
