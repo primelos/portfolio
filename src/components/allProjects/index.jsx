@@ -3,14 +3,14 @@ import { AdvancedImage } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { fill } from "@cloudinary/url-gen/actions/resize";
 import styled from "styled-components";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import NavBar from "../navBar";
 import { FaFileCode } from "react-icons/fa";
 import Footer from "../footer";
 import UpArrow from "../upArrow";
 
 const AllProjects = () => {
-  let testArr = [
+  let projectArr = [
     {
       name: "tesla-clone_bl4bsg",
       title: "Tesla Clone",
@@ -36,10 +36,10 @@ const AllProjects = () => {
       codeUrl: "https://github.com/primelos/futbol",
     },
     {
-      name: "uber-clone_waaoin",
-      title: "Uber Clone",
-      webUrl: "https://uber-clone-gold.vercel.app/",
-      codeUrl: "https://github.com/primelos/uber-clone",
+      name: "gpt3_xrpg7n",
+      title: "GPT3 AI",
+      webUrl: "https://gpt-3-murex.vercel.app/",
+      codeUrl: "https://github.com/primelos/GPT-3",
     },
     {
       name: "pintrest_wo3d0o",
@@ -64,6 +64,12 @@ const AllProjects = () => {
       title: "Favorite Movies",
       webUrl: "https://shoppies-cfv.vercel.app/",
       codeUrl: "https://github.com/primelos/Shoppies-cfv",
+    },
+    {
+      name: "uber-clone_waaoin",
+      title: "Uber Clone",
+      webUrl: "https://uber-clone-gold.vercel.app/",
+      codeUrl: "https://github.com/primelos/uber-clone",
     },
     {
       name: "gdrive_tmhhub",
@@ -188,7 +194,7 @@ const AllProjects = () => {
       <NavBar />
       <Header>Projects Examples</Header>
       <CardContainer>
-        {testArr.map((test, i) => {
+        {projectArr.map((test, i) => {
           const cld = new Cloudinary({
             cloud: {
               cloudName: "primelos",
@@ -197,7 +203,7 @@ const AllProjects = () => {
           const myImage = cld.image(test.name);
           myImage.resize(fill().width(250).height(250));
           return (
-            <Card key={i} style={{ width: "20rem", margin: "20px" }}>
+            <Card key={test.name} style={{ width: "20rem", margin: "20px" }}>
               <AdvancedImage cldImg={myImage} />
               <Card.Body>
                 <Card.Title style={{ fontSize: "1.7rem" }}>
