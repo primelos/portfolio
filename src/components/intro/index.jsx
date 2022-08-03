@@ -39,7 +39,7 @@ const Intro = ({ executeScroll }) => {
             </div>
             <div>
               <a
-                href="https://github.com/"
+                href="https://github.com/primelos"
                 target="_blank"
                 rel="noopener noreferrer"
               >
